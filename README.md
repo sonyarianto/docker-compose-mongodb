@@ -51,4 +51,18 @@ It will connect to localhost port 27017.
 
 Note that `mongo` command should be installed on the computer. On Linux this should be install `mongodb-org-shell` only. Refer to this for more detail https://docs.mongodb.com/manual/installation/
 
+After logged-in, you can type like this.
+
+Show databases:
+```
+show dbs
+```
+
+Create new non-existant database:
+```
+use mydatabase
+```
+
+etc.
+
 Enjoy your local MongoDB database server for any purpose you want, for me this setup is fine for testing purpose.
