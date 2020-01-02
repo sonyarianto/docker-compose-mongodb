@@ -37,7 +37,7 @@ Is data or user that already created will gone? No, since in the Docker Compose 
 - Username: root
 - Password: rootpassword
 
-## How to connect to ArangoDB
+## How to connect to MongoDB
 
 ### Via mongo Shell
 
@@ -51,7 +51,7 @@ It will connect to localhost port 27017.
 
 Note that `mongo` command should be installed on the computer. On Linux this should be install `mongodb-org-shell` only. Refer to this for more detail https://docs.mongodb.com/manual/installation/
 
-After logged-in, you can type like this.
+## Some quick tips after logged-in
 
 Show databases:
 ```
@@ -63,6 +63,19 @@ Create new non-existant database:
 use mydatabase
 ```
 
-etc.
+Show collections:
+```
+show collections
+```
+
+Show contents of a collection:
+```
+db.your_collection_name.find()
+```
+
+Save a data to a collection:
+```
+db.your_collection_name.save({"name":"Sony AK"})
+```
 
 Enjoy your local MongoDB database server for any purpose you want, for me this setup is fine for testing purpose.
