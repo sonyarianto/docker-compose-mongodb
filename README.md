@@ -78,4 +78,9 @@ Save a data to a collection:
 db.your_collection_name.save({"name":"Sony AK"})
 ```
 
+Show database version:
+```
+db.version()
+```
+
 Enjoy your local MongoDB database server for any purpose you want, for me this setup is fine for testing purpose.
